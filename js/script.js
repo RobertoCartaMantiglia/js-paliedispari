@@ -5,14 +5,31 @@
 
 
 
-let array = "ciao";
-let string2 = "";
+let string = "";
+let stringReverse = "";
 
-for (let i=array.length - 1; i>=0; i--){
-    string2 = string2 + array[i];
+
+// cerchiamo di vedere una parola come una array; partiamo in questo caso dalla ultima posizione e risaliamo fino alla posizione zero
+// un palindromo restituirà a video i medesimi valori sia visto dall'inizio che dalla fine
+
+
+// qui il ciclo for è al contrario perché stiamo partendo dall'ultima posizione 
+
+function isPalindrome(string){
+
+    let word = string.length;
+
+    for (let i=string.length - 1; i>=0; i--){
+        stringReverse = stringReverse + string[i];
+    }
+    if (stringReverse === string){
+        alert(word("è palindroma"));
+    } 
+    return word;   
+
 }
-
-
+let userWord = prompt("scrivi una parola");
+console.log(userWord);
 
 
 
