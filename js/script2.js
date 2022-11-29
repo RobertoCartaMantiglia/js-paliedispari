@@ -6,10 +6,17 @@
 
 let oddOrEven = prompt("pari o dispari?");
 let userNumber = parseInt(prompt("scegli un numero da 1 a 5"), 10);
+console.log(userNumber);
 
 // generiamo la funzione che ci restituisca poi un numero casuale da 1 a 5 per il computer 
+
 function getRandomNumber (numMin, numMax){
     const randomNumber = Math.floor(Math.random() * (numMax - numMin +1) + numMin);
     return randomNumber;
 }
 
+let computerNumber = getRandomNumber (1, 5);
+console.log(computerNumber);
+
+const sum = computerNumber + userNumber;
+console.log(sum);
