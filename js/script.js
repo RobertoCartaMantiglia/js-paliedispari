@@ -7,7 +7,7 @@
 // chiediamo all'utente una parola 
 let userWord = prompt("scrivi una parola");
 
-        //definiamo la funzione
+
 function isPalindrome(stringa){
         
     let wordLength = stringa.length;  //definisco la lunghezza della variabile = alla lunghezza della stringa
