@@ -5,25 +5,15 @@
 
 
 
+let array = "ciao";
+let string2 = "";
 
-
-
-function isPalindrome (str){
-    //calcoliamo la lunghezza della parola
-    const wordLength = string.length;
-
-    for (let i=0; i < wordLength / 2; i++){
-
-        if(string[i] !== string[wordLength - 1 - i]){
-            alert("non è palindromo");
-        } else {
-            alert("è palindromo");
-        }
-    }
-    return wordLength;
+for (let i=array.length - 1; i>=0; i--){
+    string2 = string2 + array[i];
 }
 
-let userWord = prompt("scrivi una parola");
+
+
 
 
 
