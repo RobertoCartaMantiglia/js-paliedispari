@@ -20,3 +20,9 @@ console.log(computerNumber);
 
 const sum = computerNumber + userNumber;
 console.log(sum);
+
+if(computerNumber < userNumber){
+    alert("VINCE IL GIOCATORE");
+} else {
+    alert ("VINCE IL COMPUTER");
+}
